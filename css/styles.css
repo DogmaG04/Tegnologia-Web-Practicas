@@ -1,0 +1,192 @@
+/*ROOT */
+:root {
+    --bg-primary: #0a192f;
+    --bg-card: #112240;
+    --bg-footer: #020c1b;
+    --text-primary: #ccd6f6;
+    --text-secondary: #8892b0;
+    --accent: #64ffda;
+    --danger: #ff4d5a;
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+    --shadow: 0 10px 30px -10px rgba(2,12,27,0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*LAYOUT */
+.container {
+    width: min(100%, 900px);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*HEADER */
+.header {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--accent);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/*FOTO */
+.Perfil {
+    text-align: center;
+    margin: 30px 0 40px;
+}
+
+.Perfil-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+/*BIENVENIDA */
+.welcome {
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin: 0 auto 50px;
+    max-width: 700px;
+    box-shadow: var(--shadow);
+}
+
+.welcome h2 {
+    color: var(--accent);
+    margin-bottom: 16px;
+    font-size: 1.8rem;
+}
+
+.github-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background-color: rgba(100, 255, 219, 0.39);
+    color: var(--accent);
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    border: 2px solid var(--accent);
+    font-weight: 600;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(100, 255, 218, 0.2);
+}
+
+.github-btn:hover {
+    background-color: var(--accent);
+    color: var(--bg-card);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(100, 255, 218, 0.4);
+}
+
+.github-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/*NAV PRACTICAS  */
+.main-nav {
+    margin-bottom: 60px;
+}
+
+.main-nav h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--danger);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.main-nav h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--accent);
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.main-nav li a {
+    display: block;
+    background-color: var(--bg-card);
+    padding: 22px;
+    border-radius: var(--border-radius);
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.main-nav li a:hover {
+    background-color: #1a3458;
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px -10px rgba(2,12,27,0.9);
+    border-color: var(--accent);
+}
+
+/*FOOTER */
+.footer {
+    background-color: var(--bg-footer);
+    padding: 40px 20px;
+    margin-top: auto; 
+    border-top: 1px solid rgba(100, 255, 218, 0.1);
+    text-align: center;
+}
+
+.footer p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.footer strong {
+    color: var(--accent);
+}
+
+/*RESPONSIVE */
+@media (max-width: 600px) {
+    .header { padding: 50px 20px 35px; }
+    .Perfil-img { width: 150px; height: 150px; }
+    .welcome { padding: 25px; }
+    .main-nav ul { grid-template-columns: 1fr; }
+}
