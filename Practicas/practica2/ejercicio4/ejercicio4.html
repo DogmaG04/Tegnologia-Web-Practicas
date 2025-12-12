@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+    <link rel="stylesheet" href="../../../css/stylesEjercicios.css">
+    <script defer src="ejercicio4.js"></script>
+  </head>
+  <body>
+    <header class="page-header">
+        <h1>Gestion de Lugar Turistico</h1>
+        <p class="subtitle">Informacion detallada y descuentos.</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2 id="lugarNombre">.</h2>
+            
+            <div class="input-group">
+                <p><strong>Ciudad:</strong> <span id="lugarCiudad"></span></p>
+                <p><strong>Horario:</strong> <span id="lugarHorario"></span></p>
+                <p><strong>Precio Entrada:</strong> <span id="lugarPrecio"></span> Bs.</p>
+                <p><strong>Promedio Calificaciones:</strong> <span id="lugarPromedio"></span></p>
+            </div>
+
+            <button id="btnDescuento" class="btn-primary">Aplicar 20% de Descuento</button>
+
+            <div id="resultCard" class="result-box hidden" style="margin-top: 20px;">
+                <span id="resultText">¡Precio actualizado con exito!</span>
+            </div>
+        </section>
+    </main>
+  </body>
+</html>

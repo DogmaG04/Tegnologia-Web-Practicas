@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio1</title>
+    <link rel="stylesheet" href="../../../css/stylesEjercicios.css" />
+    <script defer src="ejercicio1.js"></script>
+  </head>
+  <body>
+    <header class="page-header">
+        <h1>Detector de Clima</h1>
+        <p class="subtitle">Ingresa la temperatura .</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <form id="weatherForm" novalidate>
+                <div class="input-group">
+                    <label for="tempInput">Temperatura (°C)</label>
+                    <input 
+                        type="number" 
+                        id="tempInput" 
+                        placeholder="Ej. 20" 
+                        step="0.1" 
+                        required
+                    >
+                </div>
+                
+                <button type="submit" class="btn-primary">Verificar Clima</button>
+            </form>
+
+            <div id="resultCard" class="result-box hidden">
+                <span id="resultText"></span>
+            </div>
+        </section>
+    </main>
+  </body>
+</html>

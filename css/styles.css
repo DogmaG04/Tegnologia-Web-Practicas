@@ -22,7 +22,7 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     background-color: var(--bg-primary);
     color: var(--text-primary);
-    line-height: 1.6;
+    line-height: 1;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
