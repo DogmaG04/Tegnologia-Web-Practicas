@@ -7,7 +7,7 @@ class Hotel {
         }
         reservar(cantidad) {
             if (cantidad <= 0 || isNaN(cantidad)) {
-                return `Error: Ingrese una cantidad válida.`;
+                return `Error: Ingrese una cantidad valida.`;
             }
             if (this.habitacionesDisponibles >= cantidad) {
                 this.habitacionesDisponibles -= cantidad;
@@ -18,11 +18,11 @@ class Hotel {
         }
         liberar(cantidad) {
             if (cantidad <= 0 || isNaN(cantidad)) {
-                return `Error: Ingrese una cantidad válida.`;
+                return `Error: Ingrese una cantidad valida.`;
             }
 
             this.habitacionesDisponibles += cantidad;
-            return `Liberación exitosa de ${cantidad} habitaciones.`;
+            return `Liberacion exitosa de ${cantidad} habitaciones.`;
         }
         info() {
             return `Hotel ${this.nombre} en ${this.ciudad}. Disponibles: ${this.habitacionesDisponibles}.`;

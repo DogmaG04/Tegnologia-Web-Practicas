@@ -158,3 +158,70 @@ body {
     pointer-events: none;
     transform: translateY(10px);
 }
+
+/*Json*/
+h1 {
+    font-size: 8rem;
+    margin-bottom: 0;
+    line-height: 1.6;  
+    color: var(--text-primary);
+    text-align: center ;
+}
+
+.json-header p {
+    font-size: clamp(1rem, 1.2rem, 2rem);
+    margin-bottom: 0;
+    line-height: 3;  
+    color: var(--text-primary);
+    text-align: center ;
+}
+
+.json-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; 
+    margin-top: 40px;
+    padding-bottom: 80px;
+    width: 70%;
+}
+
+.hero-card {
+    background-color: var(--bg-card);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-card h2 {
+    color: var(--accent);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.hero-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.hero-card ul li {
+    font-size: 0.95rem;
+    color: var(--text-secondary); 
+    line-height: 1.8;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.hero-card ul li::before {
+    content: "*"; 
+    color: var(--accent);
+    position: absolute;
+    left: 0;
+}
