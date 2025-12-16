@@ -1,0 +1,99 @@
+{
+  "titulo": "Destinos Turisticos Destacados",
+  "lugares": [
+    {
+      "id": 1,
+      "nombre": "Cristo de la Concordia",
+      "ubicacion": "Cochabamba, Bolivia",
+      "descripcion": "Una de las estatuas de Cristo mas grandes del mundo, ofreciendo una vista panoramica impresionante de la ciudad y el valle de Cochabamba.",
+      "actividades": [
+        "Subir por teleferico o escaleras",
+        "Observacion del paisaje y fotografia",
+        "Visita a la base del monumento"
+      ],
+      "horarios": {
+        "Lunes-viernes": "09:00 - 18:00",
+        "Sabado-domingo": "08:30 - 19:00"
+      },
+      "precio": 15
+    },
+    {
+      "id": 2,
+      "nombre": "Salar de Uyuni",
+      "ubicacion": "Potosi, Bolivia",
+      "descripcion": "El desierto de sal mas grande y alto del mundo, famoso por su espectacular efecto espejo durante la epoca de lluvias y los hoteles de sal.",
+      "actividades": [
+        "Tour 4x4 por el salar",
+        "Visita a la Isla Incahuasi",
+        "Fotografia de perspectiva y reflejo"
+      ],
+      "horarios": {
+        "Lunes-viernes": "Salidas de Tours: 08:00",
+        "Sabado-domingo": "Salidas de Tours: 07:30"
+      },
+      "precio": 150
+    },
+    {
+      "id": 3,
+      "nombre": "Misiones Jesuiticas de Chiquitos",
+      "ubicacion": "Santa Cruz, Bolivia",
+      "descripcion": "Conjunto de iglesias barrocas declaradas Patrimonio de la Humanidad por la UNESCO, famosas por su arquitectura y festivales de musica.",
+      "actividades": [
+        "Recorrido por las iglesias de San Javier y Concepcion",
+        "Asistencia a conciertos de musica barroca (segun temporada)"
+      ],
+      "horarios": {
+        "Lunes-viernes": "08:00 - 17:00",
+        "Sabado-domingo": "08:00 - 17:00"
+      },
+      "precio": 30
+    },
+    {
+      "id": 4,
+      "nombre": "Parque Nacional Madidi",
+      "ubicacion": "La Paz, Bolivia",
+      "descripcion": "Una de las areas protegidas con mayor biodiversidad del planeta, abarcando desde la cordillera hasta la Amazonia.",
+      "actividades": [
+        "Ecoturismo y avistamiento de fauna",
+        "Senderismo en la selva",
+        "Paseos en canoa por el rio Beni"
+      ],
+      "horarios": {
+        "Lunes-viernes": "07:00 - 17:00",
+        "Sabado-domingo": "07:00 - 17:00"
+      },
+      "precio": 200
+    },
+    {
+      "id": 5,
+      "nombre": "Casa de la Moneda",
+      "ubicacion": "Potosi, Bolivia",
+      "descripcion": "Antigua ceca colonial donde se acuño la plata de las minas del Cerro Rico. Es uno de los museos mas importantes de America del Sur.",
+      "actividades": [
+        "Visita guiada al museo historico",
+        "Recorrido por la maquinaria original",
+        "Exhibicion de arte colonial"
+      ],
+      "horarios": {
+        "Lunes-viernes": "09:00 - 17:00",
+        "Sabado-domingo": "09:00 - 14:00"
+      },
+      "precio": 40
+    },
+    {
+      "id": 6,
+      "nombre": "Fuerte de Samaipata",
+      "ubicacion": "Santa Cruz, Bolivia",
+      "descripcion": "Sitio arqueologico precolombino tallado en una roca gigante. Combina influencias de varias culturas andinas y amazonicas. Patrimonio de la Humanidad por la UNESCO.",
+      "actividades": [
+        "Exploracion del templo ceremonial tallado",
+        "Visita al area residencial inca y la colina"
+      ],
+      "horarios": {
+        "Lunes-viernes": "08:30 - 17:30",
+        "Sabado-domingo": "08:30 - 17:30"
+      },
+      "precio": 50
+    }
+  ]
+}
